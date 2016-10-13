@@ -1,0 +1,27 @@
+﻿.droppable-tall-box {
+    width:100%;
+    min-height: 350px;
+    padding:0.5em;
+    float:left;
+    margin:10px;
+    border: 1px solid #032a48;
+    background:#bdd9f7;
+
+}
+.ui-state-highlight {
+    background:#044576;
+}
+.drop {
+
+    text-align:center;
+
+}
+.trashcan {
+    width:70%;
+    min-height: 150px;
+    padding: 0.5em;
+    float: right;
+    margin: 8px 10px 8px 20px;
+    border: 1px dotted red;
+    text-align:center;
+}

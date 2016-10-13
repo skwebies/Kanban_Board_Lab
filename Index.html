@@ -5,34 +5,40 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600" rel="stylesheet">
     <link href="CSS/master.css" rel="stylesheet" />
 
 
 </head>
 <body ng-controller="MainController">
-<div ng-include="'Views/Partials/Navbar.html'"></div>
-<main ng-view class="container-fluid"></main>
+    <div ng-include="'Views/Partials/Navbar.html'"></div>
+    <main ng-view class="container-fluid"></main>
 
 
 
-<!--3rd party libs and frameworks-->
-<script src="Scripts/jquery-3.1.0.min.js"></script>
-<script src="Scripts/jquery-ui-1.12.1.min.js"></script>
-<script src="Scripts/bootstrap.min.js"></script>
-<script src="Scripts/angular.min.js"></script>
-<script src="Scripts/angular-route.min.js"></script>
+    <!--3rd party libs and frameworks-->
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
 
 
 
-<!--Modules-->
-<script src="Scripts/Modules/module.js"></script>
+    <!--Modules-->
+    <script src="Scripts/Modules/module.js"></script>
 
-<!--Routes-->
-<script src="Scripts/Routes/route.js"></script>
+    <!--Routes-->
+    <script src="Scripts/Routes/route.js"></script>
 
-<!--Controllers-->
-<script src="Scripts/Controllers/main.controller.js"></script>
-<script src="Scripts/Controllers/home.controller.js"></script>
+    <!--Components-->
+    <script src="Scripts/Components/Draggables/todo-note.draggable.js"></script>
+    <script src="Scripts/Components/Droppables/board.droppable.js"></script>
+    <script src="Scripts/Components/Droppables/trash-can.droppable.js"></script>
+
+    <!--Controllers-->
+    <script src="Scripts/Controllers/main.controller.js"></script>
+    <script src="Scripts/Controllers/home.controller.js"></script>
 
 
 </body>

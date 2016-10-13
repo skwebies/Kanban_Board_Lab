@@ -1,1 +1,54 @@
 ﻿<h1 ng-bind="title"></h1>
+
+<div class="col-md-12">
+
+    <div class="col-md-3">
+        <h3>Add Note</h3>
+        <form ng-submit="addNote()">
+            <div class="form-group">
+                <input type="text" ng-model="newNote.title" id="title" class="form-control" placeholder="Title" />
+            </div>
+            <div class="form-group">
+                <input type="text" ng-model="newNote.description" id="description" class="form-control" placeholder="Description" />
+            </div>
+            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Add Note</button>
+        </form>
+    </div>
+    <!--Trash Can-->
+    <div class="col-md-4 pull-right">
+        <trash-can id="1"></trash-can>
+
+    </div>
+
+</div>
+<div class="col-md-12 dragdrop">
+    <!--Draggable-->
+    <div class="col-md-3">
+        <h4>Tasks</h4>
+        <ul class="list-group">
+
+            <li class="list-group-item">
+                <todo-note id="note.id" title="note.title" description="note.description" ng-repeat="note in model.todoNotes track by $index">
+
+                </todo-note>
+
+            </li>
+        </ul>
+    </div>
+
+    <!--Droppaple-->
+
+        <div class="col-md-3 drop">
+            <h4>Todo</h4>
+            <drop-board id="1"></drop-board>
+        </div>
+        <div class="col-md-3 drop">
+            <h4>WIP</h4>
+            <drop-board id="2"></drop-board>
+        </div>
+        <div class="col-md-3 drop">
+            <h4>Done</h4>
+            <drop-board id="3"></drop-board>
+        </div>
+
+</div>

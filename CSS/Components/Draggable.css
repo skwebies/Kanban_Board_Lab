@@ -1,0 +1,21 @@
+﻿.note{
+    width:225px;
+    height: 100px;
+    padding:0.5em;
+    margin-bottom:10px;
+    border: 1px solid #0a7198;
+    background-color:#bde9fa;
+    z-index:999;
+
+}
+
+.dragdrop {
+    margin-top:50px;
+    text-align:center;
+}
+.dragdrop ul {
+    list-style-type:none;
+}
+.dragdrop ul li {
+    margin:20px -20px 20px 0;
+}

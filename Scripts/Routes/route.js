@@ -17,14 +17,7 @@ angular.module("mainModule")
                     activeTab: 'Home'
 
                 })
-                .when("/About",
-                {
-                    templateUrl: "Views/About.html",
-                    controller: "AboutController",
-                    caseInsensitiveMatch: true,
-                    activeTab: 'About'
 
-                })
                 .otherwise({
                     redirectTo: ("/")
                 });
