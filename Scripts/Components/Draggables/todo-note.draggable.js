@@ -10,8 +10,9 @@ angular.module("mainModule")
             setTimeout(function () {
                 component = $("#draggable-" + model.id);
                 component.draggable({
-                    grid: [5, 5],
+                    grid: [10, 10],
                     cursor: "move"
+
 
                 });
                 component.disableSelection();

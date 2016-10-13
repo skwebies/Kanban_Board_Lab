@@ -24,21 +24,8 @@ angular.module("mainModule")
                         description:"Description 2"
 
 
-                    },
-                    {
-                        id: 3,
-                        title: "Todo Note 3",
-                        description:"Description 3"
-
-
-                    },
-                    {
-                        id: 4,
-                        title: "Todo Note 4",
-                        description:"Description 4"
-
-
                     }
+
                 ]
 
             };
